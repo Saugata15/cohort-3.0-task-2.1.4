@@ -86,7 +86,7 @@ ul.nav-links a {
 
 /* Main Content */
 main {
-  padding: 30px 60px;
+  margin: 30px 60px;
   display: grid;
   grid-template-columns: 0.8fr 1.6fr 0.8fr;
   align-items: center;
@@ -340,7 +340,7 @@ p.size-guide-link span {
 
 /* Product Features */
 section.product-features {
-    margin: 30px 60px;
+    margin: 0px 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -380,4 +380,50 @@ article {
     font-size: 14px;
     line-height: 1.7;
     color: var(--gray);
+}
+
+/* Footer */
+footer {
+    margin: 0 60px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background: #efe6d8;
+    border-radius: 20px;
+    overflow: hidden;
+    border-top: 1px solid var(--line);
+}
+
+.f-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.f-icon {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.f-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: .8;
+}
+
+.f-description h3 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    color: var(--gray);
+}
+
+.f-description p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--gray);
+    max-width: 200px;
 }
